@@ -1,6 +1,5 @@
 
 import express from "express";
-import helloRoute from "./routes/helloRoute";
 import nftRoute from "./routes/nftRoute";
 import ftRoute from "./routes/ftRoute";
 
@@ -8,7 +7,6 @@ const app = express();
 
 app.use(express.json())
 
-app.use(helloRoute);
 app.use(nftRoute);
 app.use(ftRoute);
 
